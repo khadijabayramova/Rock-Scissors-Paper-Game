@@ -1,0 +1,1 @@
+var newgame = prompt("hello");
