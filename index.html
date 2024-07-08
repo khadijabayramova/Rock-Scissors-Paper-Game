@@ -12,38 +12,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="container">
-      <div class="result_field">
-        <div class="result_images">
-          <span class="user_result">
-            <img src="/assets/imgs/rock.png" alt="rock" />
-          </span>
-          <span class="ai_result">
-            <img src="/assets/imgs/rock.png" alt="rock" />
-          </span>
-        </div>
-        <p class="result">Let's Play !</p>
-      </div>
-
-      <div class="option_images">
-        <span class="option_image">
-          <img src="/assets/imgs/rock.png" alt="rock" />
-          <p>Rock</p>
-        </span>
-        <span class="option_image">
-          <img
-            style="margin-bottom: 13.5px"
-            src="/assets/imgs/scissors.png"
-            alt="scissors"
-          />
-          <p>Scissors</p>
-        </span>
-        <span class="option_image">
-          <img src="/assets/imgs/paper.png" alt="paper" />
-          <p>Paper</p>
-        </span>
-      </div>
-    </section>
+    <!--^^head section  -->
+    <h1>Rock-Scissors_Paper</h1>
+    <!--^^buttons  -->
+    <div id="choices">
+      <button onclick="playgame('rock')">&#129307;</button>
+      <button onclick="playgame('scissors')">&#9996;</button>
+      <button onclick="playgame('paper')">&#129306;</button>
+    </div>
+    <!--^^results -->
+    <div class="df">
+      <div id="playerDisplay">Player :</div>
+      <div id="computerDisplay">Computer :</div>
+    </div>
+    <div id="resultDisplay"></div>
     <script src="script.js" async></script>
   </body>
 </html>
